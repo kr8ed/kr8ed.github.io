@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta HTTP-EQUIV="refresh" CONTENT="30000">		
+<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1,user-scalable=no"/>
+<meta http-equiv="imagetoolbar" content="no" />
+<title> Party App </title>
+<link rel="stylesheet" href="includes/custom.css">	    
+<link rel="stylesheet" href="jsmobile/jquery.mobile-1.4.5.min.css">	
+<script src="jsmobile/jquery.js"></script>		
+<script src="jsmobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<!------------------------------------------------------   CLUBS LIST BLOEMFONTIEN  ---------------------------------------------------------------------------->
+
+<div data-role="page"    id="bloemfontien"  data-dom-cache="true">
+<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-fullscreen="false" >
+  <h1 style=" box-shadow:none; text-shadow:0 0 0; color:white;">Clubs & Pubs</h1>
+</div>
+<!-- /header -->
+<div role="main" data-direction="reverse"  >
+ <form class="ui filterable">
+   <input id="filterBasic-input" data-type="search" data-mini="true" data-wrapper-class="ui-custom" placeholder="Find a Club or Lounge in Bloemfontien">
+ </form>
+<ul data-role="listview"   id="thelist" data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input"  class="ui-nodisc-icon ui-alt-icon" >
+
+<li><a href="#topaz-lounge"      id="listclubs" data-transition="slide" data-prefetch         ><img src="clubslogo-bloem\topaz-lounge.jpg"      height="80" width="100%" id="club-logo">TOPAZ LOUNGE<p><font color="red">Lounge</font> </p></a></li>
+<li><a href="#western-saloon"    id="listclubs" data-transition="slide" data-prefetch         ><img src="clubslogo-bloem\western-saloon.jpeg"   height="80" width="100%" id="club-logo">WESTERN SALOON<p><font color="red">Club</font> </p></a></li>
+<li><a href="#route-66"          id="listclubs" data-transition="slide" data-prefetch         ><img src="clubslogo-bloem\route-66.jpeg"         height="80" width="100%" id="club-logo">ROUTE 66<p><font color="red">Pub</font> </p></a></li>
+<li id="no-results"><center>Search not found</center></a></li>
+
+</ul>
+</div>
+</div>  
+
+
+
+
+
+<!--------------------------------------------------------------------------------TOPAZ LOUNGE------------------------------------------------------------------------------------------------>  
+<div data-role="page"    id="topaz-lounge"   data-dom-cache="true"  >
+<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-fullscreen="false">
+<h1 style="background:purple; box-shadow:none; text-shadow:0 0 0; color:white;">Topaz lounge</h1>
+<a href="#" onclick="window.location.reload(true);" data-role="button" data-icon="refresh"  class="ui-nodisc-icon " data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+</div>
+
+<!--MAIN-->  
+<ul data-role="listview"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input" class="ui-nodisc-icon ui-alt-icon"  >
+<li ><a href="#"        style="background-color:white;color:purple;border:none; box-shadow:0px 2px 3px rgba(100,100,100,0.49);margin-bottom:1px" >
+<img src="clubslogo-bloem\topaz-lounge.jpg" width="100%" height="80" style="background-color:white;box-shadow:0px 1px 3px rgba(100,100,100,0.49);border-radius:40px" >
+TOPAZ LOUNGE<p><font color="red">
+Lounge</font> 
+</ul>
+<div role="main" class="ui-content">
+<div class="ui-grid-c">
+  <div class="ui-block-a"> <a href="tel:"             id="button"                data-icon="phone"     data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:#3b7a57; border-color: #3b7a57; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">CALL US</a> </div>
+  <div class="ui-block-b"> <a href="http://www.topazlounge.co.za"                        id="button"                data-icon="info"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:purple; border-color:purple; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">INFO</a> </div>
+  <div class="ui-block-c"><a href="mailto:info@topazlounge.co.za" id="button"                data-icon="mail"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:blue; border-color: blue; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button"  class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAIL</a> </div>
+  <div class="ui-block-d"><a href="google.navigation:q=  Bloemgate, Van Der Riet 9300 Bloemfontein"                          id="button"                data-icon="location"  data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:red; border-color: red; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAP</a> </div>
+</div>
+</div> </p></a></li>
+  <div class="ui-body" style="background:white; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;   border-radius:0px; border-top:none !important;" >
+  <p style="opacity:0.7;"> <b>
+TOPAZ LOUNGE</b> <br> 
+Topaz Lounge is a lifestyle lounge, it caters for people that appreciate elegance and above average service. #TopazLifestyle   </p>
+</div>
+<br>
+<div class="ui-body" style="background:white; font-weight:normal; box-shadow:1px 3px 5px 0px  rgba(100,100,100,0.49) ;   border-radius:0px;  " >
+  <p ><i style="color:purple">Venue:</i> Lounge</p>
+  <p ><i style="color:purple">Ambiance:</i> Hip-hop ,house and more</p>
+  <p ><i style="color:purple">Hours:</i> wednesday-Satday 6:00pm-4:00am</p>
+  <p ><i style="color:purple">Age Resctriction :</i>21 and above<p>
+</div>     
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+
+<!--------------------------------------------------------------------------------WESTERN SALOON------------------------------------------------------------------------------------------------>  
+<div data-role="page"    id="western-saloon"   data-dom-cache="true"  >
+<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-fullscreen="false">
+<h1 style="background:purple; box-shadow:none; text-shadow:0 0 0; color:white;">Western-saloon</h1>
+<a href="#" onclick="window.location.reload(true);" data-role="button" data-icon="refresh"  class="ui-nodisc-icon " data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+</div>
+
+<!--MAIN-->  
+<ul data-role="listview"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input" class="ui-nodisc-icon ui-alt-icon"  >
+<li ><a href="#"        style="background-color:white;color:purple;border:none; box-shadow:0px 2px 3px rgba(100,100,100,0.49);margin-bottom:1px" >
+<img src="clubslogo-bloem\western-saloon.jpeg" width="100%" height="80" style="background-color:white;box-shadow:0px 1px 3px rgba(100,100,100,0.49);border-radius:40px" >
+WESTERN SALOON<p><font color="red">
+Club</font> 
+</ul>
+<div role="main" class="ui-content">
+<div class="ui-grid-c">
+  <div class="ui-block-a"> <a href="tel:0824450268"             id="button"                data-icon="phone"     data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:#3b7a57; border-color: #3b7a57; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">CALL US</a> </div>
+  <div class="ui-block-b"> <a href="#"                        id="button"                data-icon="info"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:purple; border-color:purple; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">INFO</a> </div>
+  <div class="ui-block-c"><a href="mailto:info@partyapp.co.za" id="button"                data-icon="mail"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:blue; border-color: blue; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button"  class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAIL</a> </div>
+  <div class="ui-block-d"><a href="google.navigation:q= Bains Game Lodge 9300 Bloemfontein"                          id="button"                data-icon="location"  data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:red; border-color: red; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAP</a> </div>
+</div>
+</div> </p></a></li>
+  <div class="ui-body" style="background:white; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;   border-radius:0px; border-top:none !important;" >
+  <p style="opacity:0.7;"> <b>
+WESTERN SALOON</b> <br> 
+Club for dancing, drinking and enjoyment</div>
+<br>
+<div class="ui-body" style="background:white; font-weight:normal; box-shadow:1px 3px 5px 0px  rgba(100,100,100,0.49) ;   border-radius:0px;  " >
+  <p ><i style="color:purple">Venue:</i>Club</p>
+  <p ><i style="color:purple">Ambiance:</i> n/a</p>
+  <p ><i style="color:purple">Hours:</i> n/a</p>
+  <p ><i style="color:purple">Age Resctriction :</i>21 and above<p>
+</div>     
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+
+<!--------------------------------------------------------------------------------ROUTE 66------------------------------------------------------------------------------------------------>  
+<div data-role="page"    id="route-66"   data-dom-cache="true"  >
+<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-fullscreen="false">
+<h1 style="background:purple; box-shadow:none; text-shadow:0 0 0; color:white;">Route-66</h1>
+<a href="#" onclick="window.location.reload(true);" data-role="button" data-icon="refresh"  class="ui-nodisc-icon " data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+</div>
+
+<!--MAIN-->  
+<ul data-role="listview"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input" class="ui-nodisc-icon ui-alt-icon"  >
+<li ><a href="#"        style="background-color:white;color:purple;border:none; box-shadow:0px 2px 3px rgba(100,100,100,0.49);margin-bottom:1px" >
+<img src="clubslogo-bloem\route-66.jpeg" width="100%" height="80" style="background-color:white;box-shadow:0px 1px 3px rgba(100,100,100,0.49);border-radius:40px" >
+ROUTE 66<p><font color="red">
+Pub</font> 
+</ul>
+<div role="main" class="ui-content">
+<div class="ui-grid-c">
+  <div class="ui-block-a"> <a href="tel:082 856 0736 "             id="button"                data-icon="phone"     data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:#3b7a57; border-color: #3b7a57; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">CALL US</a> </div>
+  <div class="ui-block-b"> <a href="http://www.route-66.co.za/index.html"                        id="button"                data-icon="info"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:purple; border-color:purple; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">INFO</a> </div>
+  <div class="ui-block-c"><a href="mailto:info@route-66.co.za" id="button"                data-icon="mail"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:blue; border-color: blue; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button"  class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAIL</a> </div>
+  <div class="ui-block-d"><a href="google.navigation:q= 2, Van Blerk Ave, Bloemfontein"                          id="button"                data-icon="location"  data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:red; border-color: red; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAP</a> </div>
+</div>
+</div> </p></a></li>
+  <div class="ui-body" style="background:white; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;   border-radius:0px; border-top:none !important;" >
+  <p style="opacity:0.7;"> <b>
+ROUTE 66</b> <br> 
+n/a</div>
+<br>
+<div class="ui-body" style="background:white; font-weight:normal; box-shadow:1px 3px 5px 0px  rgba(100,100,100,0.49) ;   border-radius:0px;  " >
+  <p ><i style="color:purple">Venue:</i>Pub</p>
+  <p ><i style="color:purple">Ambiance:</i> n/a</p>
+  <p ><i style="color:purple">Hours:</i>Monday - Satday 10:00am-2:00am</p>
+  <p ><i style="color:purple">Age Resctriction :</i>21 and above<p>
+</div>     
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+.ui-header{ background:white !important;border-color:! important;}
+.logo{text-align:center;margin:0px}
+#eventsheader{background:white!important;}
+#form{border-bottom:none;background:white !important}
+body #browse{background:white}
+body #main{background:white !important}
+#share{border:none;background:transparent !important;color:white; font-weight:normal; border-radius:0px;}
+#find-a-party-button{background:purple; transition-duration:0.4s; font-weight:normal; box-shadow:0px 0px 0px     rgba(100,100,100,0.49) ; color:white; border-radius:0px; text-shadow:0 0 0; color:white;border-color:grey; margin:18px;padding:18px}
+#find-a-party-button:hover{background:rgba(128,0,128,0.7)}
+
+#events-btn{background:white; font-weight:normal; text-shadow:0 0 0;box-shadow:0px 0px 0px 0px rgba(100,100,100,0.49) ; color:purple;border-color:purple; border-radius:0px;margin:18px;padding:18px}
+#events-btn:hover{background:rgba(255,255,255,0.7)}
+
+#specials{background:#dc143c;;  font-weight:normal; box-shadow:0px 0px 0px     rgba(100,100,100,0.49) ; color:white; border-radius:0px; text-shadow:0 0 0; color:white;border-color:grey; margin:5px;}
+
+#club-logo{background-color:white;box-shadow:0px 1px 3px rgba(100,100,100,0.49);border-radius:40px;text-shadow:0 0 0}
+#listclubs{background-color:white;color:purple;border:none; box-shadow:0px 2px 3px rgba(100,100,100,0.49);margin-bottom:1px ;text-shadow:0 0 0}
+.ui-icon-searchfield::after{display:none !important}
+.blur-filter{-webkit-filter:blur(2px)}
+.ui-loader{display:none !important}
+.ui-header a{color:white !important;font-weight:normal}	
+a:active{box-shadow:none! important}
+#calls{background:white;  font-weight:normal; text-shadow:0 0 0;box-shadow:0px 0px 0px 0px rgba(100,100,100,0.49) ; color:grey;border-color:grey; border-radius:0px}
+
+body #main .ui-icon-bars,.ui-icon-action{
+               background-color:transparent !important;
+               border:none! important;
+               border-style:hidden;
+               -webkit-box-shadow:none;
+               box-shadow:none!important;
+              }
+#no-results{display:none;}
+#custom-collapsible h3 a{background:white;transition-duration:0.9s;font-weight:normal;text-shadow:0 0 0;box-shadow:0px 0px 0px 0px rgba(100,100,100,0.49) ;border-color:silver;}
+#custom-collapsible h3 a:hover{background:#f5f5f5;opacity:0.8}
+#city{border:none !important; background:white;font-weight:normal;opacity:0.80;text-shadow:0 0 0 !important}
+a:active{text-shadow:0 0 0;text-decoration:none;}
+h1{font-weight:normal;}
+.ui-input-text.ui-custom{border-radius:0px; border:0;border-bottom:1px solid black;box-shadow:none;}
+.ui-input-search.ui-custom{ background-color:transparent!important;border-radius:0px; border:0;border-bottom:0px solid black;box-shadow:none;color:purple !important;}
+.ui-input-btn.custom-btn{border-radius:0px; border:0;border-bottom:2px solid black;box-shadow:none; }
+
+
+img{max-width:100%;
+}
+
+

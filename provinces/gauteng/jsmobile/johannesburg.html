@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta HTTP-EQUIV="refresh" CONTENT="30000">		
+<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1,user-scalable=no"/>
+<meta http-equiv="imagetoolbar" content="no" />
+<title> Party App </title>
+<link rel="stylesheet" href="includes/custom.css">	    
+<link rel="stylesheet" href="jsmobile/jquery.mobile-1.4.5.min.css">	
+<script src="jsmobile/jquery.js"></script>		
+<script src="jsmobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<!------------------------------------------------------   CLUBS LIST JOHANNESBURG  ---------------------------------------------------------------------------->
+
+<div data-role="page"   data-theme="a" id="johannesburg"  data-dom-cache="true">
+
+<!-- /header -->
+<div role="main" data-direction="reverse"  >
+ <form class="ui filterable" data-role="header" data-position="fixed" data-tap-toggle="false" id="form">
+   <input id="filterBasic-input" Style="color:black;opacity:0.7;background-color:transparent;border-bottom:1px solid;border-color:purple" data-wrapper-class="ui-custom" data-type="search" data-mini="true" autocomplete="off" placeholder="Search  ">
+ </form>
+<ul data-role="listview"  id="thelist"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input"  class="ui-nodisc-icon ui-alt-icon" >
+
+<li><a href="#hush"      id="listclubs" data-transition="slide" data-prefetch         ><img src="clubslogo-johannesburg\hush.jpg"      height="80" width="100%" id="club-logo">HUSH<p><font color="red">Club - Rosebank</font> </p></a></li>
+<li><a href="#harem"     id="listclubs" data-transition="slide" data-prefetch         ><img src="clubslogo-johannesburg\harem.jpg"     height="80" width="100%" id="club-logo">HAREM<p><font color="red">Club - Rosebank</font> </p></a></li>
+<li><a href="#cocoon"    id="listclubs" data-transition="slide" data-prefetch         ><img src="clubslogo-johannesburg\cocoon.png"     height="80" width="100%" id="club-logo">COCOON<p><font color="red">Lounge - Sandton</font> </p></a></li>
+<li><a href="#taboo"     id="listclubs" data-transition="slide" data-prefetch         ><img src="clubslogo-johannesburg\taboo.jpeg"    height="80" width="100%" id="club-logo">TABOO<p><font color="red">Club  Sandton</font> </p></a></li>
+<li><a href="#fluid"     id="listclubs" data-transition="slide" data-prefetch         ><img src="clubslogo-johannesburg\fluid.jpg"    height="80" width="100%" id="club-logo">FLUID<p><font color="red">Club - Rosebank</font> </p></a></li>
+<li><a href="#capital-underground"     id="listclubs" data-transition="slide" data-prefetch         ><img src="clubslogo-johannesburg\capital-underground.jpg"    height="80" width="100%" id="club-logo">CAPITAL UNDERGROUND<p><font color="red">Club - Rosebank</font> </p></a></li>
+<li><a href="#deja-vu"   id="listclubs" data-transition="slide" data-prefetch         ><img src="clubslogo-johannesburg\deja-vu.jpg"   height="80" width="100%" id="club-logo">DEJA VU <p><font color="red">Club</font> </p></a></li>
+<li><a href="#nyc"       id="listclubs" data-transition="slide" data-prefetch        ><img src="clubslogo-johannesburg\nyc.jpeg"      height="80" width="100%" id="club-logo">NEW YORK CLUB <p><font color="red">Club - fourways / sandton</font> </p></a></li>
+<li><a href="#sankayi"   id="listclubs" data-transition="slide" data-prefetch         ><img src="clubslogo-johannesburg\sankayi.jpg"   height="80" width="100%" id="club-logo">SANKAYI <p><font color="red">Club</font> </p></a></li>
+<li><a href="#chez-ntemba"id="listclubs" data-transition="slide" data-prefetch        ><img src="clubslogo-johannesburg\chez-ntemba.jpg" height="80"width="100%"id="club-logo">CHEZ NTEMBA <p><font color="red">Club</font> </p></a></li>
+<li><a href="#stones-fourways"id="listclubs" data-transition="slide" data-prefetch   ><img src="clubslogo-johannesburg\stones-fourways.jpg" height="80"        id="club-logo">STONES FOURWAYS  <p><font color="red">Lounge / Club</font> </p></a></li>
+<li><a href="#stones-bedfordview"id="listclubs" data-transition="slide" data-prefetch ><img src="clubslogo-johannesburg\stones-bedfordview.jpg" height="80"     id="club-logo">STONES BEDFORDVIEW  <p><font color="red">Lounge / Club</font> </p></a></li>
+<li><a href="#news-cafe"id="listclubs" data-transition="slide" data-prefetch         ><img src="clubslogo-johannesburg\news-cafe.png" height="80" width="100%" id="club-logo">NEWS CAFE  <p><font color="red">Lounge </font> </p></a></li>
+<li><a href="#kong"     id="listclubs" data-transition="slide" data-prefetch         ><img src="clubslogo-johannesburg\kong.jpg"      height="80" width="100%" id="club-logo">KONG<p><font color="red">Club</font> </p> </a></li>
+<li><a href="#madison-avenue"  id="listclubs" data-transition="slide" data-prefetch         ><img src="clubslogo-johannesburg\madison-avenue.jpg"   height="80" width="100%" id="club-logo">MADISON AVENUE <p><font color="red">Club</font> </p></a></li>
+<li><a href="#vip-room" id="listclubs" data-transition="slide" data-prefetch         ><img src="clubslogo-johannesburg\vip-room.jpg"  height="80" width="100%" id="club-logo">VIP ROOM <p><font color="red">Club</font> </p></a></li>
+<li><a href="#movida" id="listclubs" data-transition="slide" data-prefetch         ><img src="clubslogo-johannesburg\movida.jpeg"  height="80" width="100%" id="club-logo">MOVIDA <p><font color="red">Club</font> </p></a></li>
+<li><a href="#the-sands" id="listclubs" data-transition="slide" data-prefetch         ><img src="clubslogo-johannesburg\the-sands.jpg"  height="80" width="100%" id="club-logo">THE SANDS <p><font color="red">Club</font> </p></a></li>
+<li><a href="#the-grand" id="listclubs" data-transition="slide" data-prefetch         ><img src="clubslogo-johannesburg\the-grand.jpg"  height="80" width="100%" id="club-logo">THE GRAND <p><font color="red">Club</font> </p></a></li>
+<li id="no-results"><center>Search: no match found</center></a></li>
+
+</ul>
+</div>
+</div>  
+
+
+
+
+
+<!--------------------------------------------------------------------------------HUSH------------------------------------------------------------------------------------------------>  
+<div data-role="page"    id="hush"   data-dom-cache="true"  >
+<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-fullscreen="false">
+<h1 >Hush</h1>
+<a href="#"  data-rel="back" data-role="button" data-icon="carat-l"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+<a href="#" onclick="window.location.reload(true);" data-role="button" data-icon="refresh"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+</div>
+
+<!--MAIN-->  
+<ul data-role="listview"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input" class="ui-nodisc-icon ui-alt-icon"  >
+<li ><a href="#"        style="background-color:white;color:purple;border:none; box-shadow:0px 2px 3px rgba(100,100,100,0.49);margin-bottom:1px" >
+<img src="clubslogo-johannesburg\hush.jpg" width="100%" height="80" style="background-color:white;box-shadow:0px 1px 3px rgba(100,100,100,0.49);border-radius:40px" >
+HUSH<p><font color="red">
+Club</font> 
+</ul>
+<div role="main" class="ui-content">
+<div class="ui-grid-c">
+  <div class="ui-block-a"> <a href="tel:011 447 0203"             id="button"                data-icon="phone"     data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:#3b7a57; border-color: #3b7a57; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">CALL US</a> </div>
+  <div class="ui-block-b"> <a href="http://www.hushclub.co.za/about.asp"                        id="button"                data-icon="info"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:purple; border-color:purple; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">INFO</a> </div>
+  <div class="ui-block-c"><a href="mailto:hushbookings@gmail.com" id="button"                data-icon="mail"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:blue; border-color: blue; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button"  class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAIL</a> </div>
+  <div class="ui-block-d"><a href="uber://?client_id=LSvmVrm6VxmMqKX8txYYKKxKBo0cRFpV&action=setPickup&pickup[formatted_address]=1451%20Market%20St%2C%20San%20Francisco%2C%20CA%2094103&dropoff[nickname]=Coit%20Tower&dropoff[formatted_address]=1%20Telegraph%20Hill%20Blvd%2C%20San%20Francisco%2C%20CA%2094133&product_id=a1111c8c-c720-46c3-8534-2fcdd730040d&link_text=View%20team%20roster&partner_deeplink=partner%3A%2F%2Fteam%2F9383"                        id="button"                data-icon="location"  data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:red; border-color: red; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAP</a> </div>
+  </div>
+
+</div> </p></a></li>
+  <div class="ui-body" style="background:white; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;   border-radius:0px; border-top:none !important;margin:8px" >
+  <p style="opacity:0.7;"> <b>
+HUSH</b> <br> 
+is a chic and intimate bar lounge in the design district in Rosebank, Johannesburg. The lounges boast a décor of opulent textures, sleek surfaces and sensuous lighting, making a perfect ambiance to relax in. Take your associates, a group of friends or someone special and enjoy sophisticated, modern & super classy clubbing. For those who like to move their bodies, expect tempting sounds from the city’s most talented DJs.
+   </p>
+</div>
+<br>
+<div class="ui-body" style="background:white; font-weight:normal; box-shadow:1px 3px 5px 0px  rgba(100,100,100,0.49) ;   border-radius:0px;  " >
+  <p ><i style="color:purple">Venue:</i> Night Club</p>
+  <p ><i style="color:purple">Ambiance:</i> Hip-hop ,house and more</p>
+  <p ><i style="color:purple">Hours:</i> Thursday-Satday 9:00pm-4:00am</p>
+  <p ><i style="color:purple">Age Resctriction :</i>21 and above<p>
+</div>     
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+
+<!--------------------------------------------------------------------------------HAREM------------------------------------------------------------------------------------------------>  
+<div data-role="page"    id="harem"    data-dom-cache="true" >
+<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-fullscreen="false">
+<h1 >Harem</h1>
+<a href="#"  data-rel="back" data-role="button" data-icon="carat-l"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+<a href="#" onclick="window.location.reload(true);" data-role="button" data-icon="refresh"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+
+</div>
+
+<!--MAIN-->  
+<ul data-role="listview"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input" class="ui-nodisc-icon ui-alt-icon"  >
+<li ><a href="#"        style="background-color:white;color:purple;border:none; box-shadow:0px 2px 3px rgba(100,100,100,0.49);margin-bottom:1px" >
+<img src="clubslogo-johannesburg\harem.jpg" width="100%" height="80" style="background-color:white;box-shadow:0px 1px 3px rgba(100,100,100,0.49);border-radius:40px" >
+HAREM<p><font color="red">
+Club</font> 
+</ul>
+<div role="main" class="ui-content">
+<div class="ui-grid-c">
+  <div class="ui-block-a"> <a href="tel:+27793196740 "             id="button"                data-icon="phone"     data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:#3b7a57; border-color: #3b7a57; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">CALL US</a> </div>
+  <div class="ui-block-b"> <a href="http://www.haremclub.co.za/"                          id="button"                data-icon="info"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:purple; border-color:purple; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">INFO</a> </div>
+  <div class="ui-block-c"><a href="mailto: info@thenightlife.co.za" id="button"                data-icon="mail"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:blue; border-color: blue; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button"  class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAIL</a> </div>
+  <div class="ui-block-d"><a href="google.navigation:q= 160 Jan Smuts Avenue, Corner 7th Avenue, Design District, Rosebank, Johannesburg(HAREM)"                          id="button"                data-icon="location"  data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:red; border-color: red; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAP</a> </div>
+</div>
+</div> </p></a></li>
+  <div class="ui-body" style="background:white; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;border-radius:0px; border-top:none !important;margin:8px" >
+  <p style="opacity:0.7;"> <b>
+HAREM</b> <br> 
+is one of the continent's finest venues, catering for Johannesburg's sophisticates. We offer our clientèle more VIP space, more tables, more refinement and elegance; all of which is in touch with global trends.
+</div>
+<br>
+<div class="ui-body" style="background:white; font-weight:normal; box-shadow:1px 3px 5px 0px  rgba(100,100,100,0.49) ;   border-radius:0px;  " >
+  <p ><i style="color:purple">Venue:</i> Night Club</p>
+  <p ><i style="color:purple">Ambiance:</i> Hip-hop ,house and more</p>
+  <p ><i style="color:purple">Hours:</i> thursday-Satday 10:00pm-4:00am</p>
+  <p ><i style="color:purple">Age Resctriction :</i>21 and above<p>
+</div>     
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+
+<!--------------------------------------------------------------------------------COCOON------------------------------------------------------------------------------------------------>  
+<div data-role="page"    id="cocoon"   data-dom-cache="true"  >
+<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-fullscreen="false">
+<h1>Cocoon</h1>
+<a href="#"  data-rel="back" data-role="button" data-icon="carat-l"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+<a href="#" onclick="window.location.reload(true);" data-role="button" data-icon="refresh"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+</div>
+
+<!--MAIN-->  
+<ul data-role="listview"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input" class="ui-nodisc-icon ui-alt-icon"  >
+<li ><a href="#"        style="background-color:white;color:purple;border:none; box-shadow:0px 2px 3px rgba(100,100,100,0.49);margin-bottom:1px" >
+<img src="clubslogo-johannesburg\cocoon.png" width="100%" height="80" style="background-color:white;box-shadow:0px 1px 3px rgba(100,100,100,0.49);border-radius:40px" >
+COCOON<p><font color="red">
+Club</font> 
+</ul>
+<div role="main" class="ui-content">
+<div class="ui-grid-c">
+  <div class="ui-block-a"> <a href="tel: +27 11 783 2200"             id="button"                data-icon="phone"     data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:#3b7a57; border-color: #3b7a57; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">CALL US</a> </div>
+  <div class="ui-block-b"> <a href="http://cocoonlounge.co.za"                        id="button"                data-icon="info"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:purple; border-color:purple; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">INFO</a> </div>
+  <div class="ui-block-c"><a href="mailto:info@cocoonlounge.co.za" id="button"                data-icon="mail"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:blue; border-color: blue; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button"  class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAIL</a> </div>
+  <div class="ui-block-d"><a href="google.navigation:q= 24 Central, Gwen Ln, Sandton, 2196"                          id="button"                data-icon="location"  data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:red; border-color: red; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAP</a> </div>
+</div>
+</div> </p></a></li>
+  <div class="ui-body" style="background:white; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;   border-radius:0px; border-top:none !important;" >
+  <p style="opacity:0.7;"> <b>
+COCOON</b> <br> 
+A glittering champagne, cocktail and cigar bar in the heart of Sandton, Cocoon Lounge is a venue unparalalled in its class, service and city style. Sleek, sophisticated and sexy, this is where Joburg’s young, influential elite meet for sundowners, private celebrations or an unrivalled night out.   </p>
+</div>
+<br>
+<div class="ui-body" style="background:white; font-weight:normal; box-shadow:1px 3px 5px 0px  rgba(100,100,100,0.49) ;   border-radius:0px;  " >
+  <p ><i style="color:purple">Venue:</i> Lounge</p>
+  <p ><i style="color:purple">Ambiance:</i> Hip-hop ,house and more</p>
+  <p ><i style="color:purple">Hours:</i> thursday-friday 4:00pm (sat 7pm)- 2:00am</p>
+  <p ><i style="color:purple">Age Resctriction :</i>21 and above<p>
+</div>     
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+
+<!--------------------------------------------------------------------------TABOO--------------------------------------------------------------------------------------------->  
+<div data-role="page"    id="taboo"   data-dom-cache="true"  >
+<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-fullscreen="false">
+<h1>Taboo</h1>
+<a href="#"  data-rel="back" data-role="button" data-icon="carat-l"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+<a href="#" onclick="window.location.reload(true);" data-role="button" data-icon="refresh"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+</div>
+
+<!--MAIN-->  
+<ul data-role="listview"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input" class="ui-nodisc-icon ui-alt-icon"  >
+<li ><a href="#"        style="background-color:white;color:purple;border:none; box-shadow:0px 2px 3px rgba(100,100,100,0.49);margin-bottom:1px" >
+<img src="clubslogo-johannesburg\taboo.jpeg"  alt="reload" width="100%" height="80" style="background-color:white;box-shadow:0px 1px 3px rgba(100,100,100,0.49);border-radius:40px" >
+TABOO<p><font color="red">
+Club</font> 
+</ul>
+<div role="main" class="ui-content">
+<div class="ui-grid-c">
+  <div class="ui-block-a"> <a href="tel: 011 783 2200"             id="button"                data-icon="phone"     data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:#3b7a57; border-color: #3b7a57; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">CALL US</a> </div>
+  <div class="ui-block-b"> <a href="http://www.taboo.co.za/"                        id="button"                data-icon="info"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:purple; border-color:purple; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">INF0</a> </div>
+  <div class="ui-block-c"><a href="mailto: info@taboo.co.za" id="button"                data-icon="mail"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:blue; border-color: blue; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button"  class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAIL</a> </div>
+  <div class="ui-block-d"><a href="google.navigation:q= 24 Central,Cnr Fredman Drive and Gwen Lane, Sandown, Sandton"                          id="button"                data-icon="location"  data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:red; border-color: red; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAP</a> </div>
+</div>
+</div> </p></a></li>
+  <div class="ui-body" style="background:white; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;   border-radius:0px; border-top:none !important;" >
+  <p style="opacity:0.7;"> <b>
+TABOO</b> <br> 
+Nestled in the most glamorous square mile in Africa is Taboo, an institution, which over the past decade, has set the precedent for entertainment throughout the continent. With a unique and heady mix of glamour & luxury Taboo offers a discerning clientele an extravagant escape from the norm and a glittering stage upon which to shine!   </p>
+</div>
+<br>
+<div class="ui-body" style="background:white; font-weight:normal; box-shadow:1px 3px 5px 0px  rgba(100,100,100,0.49) ;   border-radius:0px;  " >
+  <p ><i style="color:purple">Venue:</i> Night Club</p>
+  <p ><i style="color:purple">Ambiance:</i> Hip-hop ,house and more</p>
+  <p ><i style="color:purple">Hours:</i> thursday-friday (sat 7pm) 4:00pm-2:00am</p>
+  <p ><i style="color:purple">Age Resctriction :</i>21 and above<p>
+</div>     
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+<!--------------------------------------------------------------------------FLUID--------------------------------------------------------------------------------------------->  
+<div data-role="page"    id="fluid"   data-dom-cache="true"  >
+<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-fullscreen="false">
+<h1>Fluid</h1>
+<a href="#"  data-rel="back" data-role="button" data-icon="carat-l"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+<a href="#" onclick="window.location.reload(true);" data-role="button" data-icon="refresh"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+</div>
+
+<!--MAIN-->  
+<ul data-role="listview"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input" class="ui-nodisc-icon ui-alt-icon"  >
+<li ><a href="#"        style="background-color:white;color:purple;border:none; box-shadow:0px 2px 3px rgba(100,100,100,0.49);margin-bottom:1px" >
+<img src="clubslogo-johannesburg\fluid.jpg"  alt="reload" width="100%" height="80" style="background-color:white;box-shadow:0px 1px 3px rgba(100,100,100,0.49);border-radius:40px" >
+FLUID<p><font color="red">
+Club</font> 
+</ul>
+<div role="main" class="ui-content">
+<div class="ui-grid-c">
+  <div class="ui-block-a"> <a href="tel: "             id="button"                data-icon="phone"     data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:#3b7a57; border-color: #3b7a57; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">CALL US</a> </div>
+  <div class="ui-block-b"> <a href="http://www.clubfluid.co.za "                        id="button"                data-icon="info"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:purple; border-color:purple; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">INF0</a> </div>
+  <div class="ui-block-c"><a href="mailto: info@clubfuild.co.za" id="button"                data-icon="mail"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:blue; border-color: blue; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button"  class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAIL</a> </div>
+  <div class="ui-block-d"><a href="google.navigation:q= 1st Floor Design District Centre, Cnr Keyes & Tyrwhitt Street, Rosebank,2091 Johannesburg"                          id="button"                data-icon="location"  data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:red; border-color: red; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAP</a> </div>
+</div>
+</div> </p></a></li>
+  <div class="ui-body" style="background:white; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;   border-radius:0px; border-top:none !important;" >
+  <p style="opacity:0.7;"> <b>
+FLUID</b> <br> 
+FLUID is your new Nite club situated in Rosebank, located in the trendy Design District this venue aims to change the nite life experience for all In a world of brands all competing aggressively for a share of market place and the advancement in technology with social media platforms it is imperative to change the way we do business.
+</div>
+<br>
+<div class="ui-body" style="background:white; font-weight:normal; box-shadow:1px 3px 5px 0px  rgba(100,100,100,0.49) ;   border-radius:0px;  " >
+  <p ><i style="color:purple">Venue:</i> Night Club</p>
+  <p ><i style="color:purple">Ambiance:</i> Hip-hop ,house and more</p>
+  <p ><i style="color:purple">Hours:</i> friday-sat  9:00pm-4:00am</p>
+  <p ><i style="color:purple">Age Resctriction :</i>21 and above<p>
+</div>     
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+<!-------------------------------------------------------------------------- CAPITAL-UNDERGROUND--------------------------------------------------------------------------------------------->  
+<div data-role="page"    id="capital-underground"   data-dom-cache="true"  >
+<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-fullscreen="false">
+<h1>Capital underground</h1>
+<a href="#"  data-rel="back" data-role="button" data-icon="carat-l"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+<a href="#" onclick="window.location.reload(true);" data-role="button" data-icon="refresh"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+</div>
+
+<!--MAIN-->  
+<ul data-role="listview"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input" class="ui-nodisc-icon ui-alt-icon"  >
+<li ><a href="#"        style="background-color:white;color:purple;border:none; box-shadow:0px 2px 3px rgba(100,100,100,0.49);margin-bottom:1px" >
+<img src="clubslogo-johannesburg\capital-underground.jpg"  alt="reload" width="100%" height="80" style="background-color:white;box-shadow:0px 1px 3px rgba(100,100,100,0.49);border-radius:40px" >
+CAPITAL UNDERGROUND <p><font color="red">
+Club</font> 
+</ul>
+<div role="main" class="ui-content">
+<div class="ui-grid-c">
+  <div class="ui-block-a"> <a href="tel:011 880 0033 "             id="button"                data-icon="phone"     data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:#3b7a57; border-color: #3b7a57; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">CALL US</a> </div>
+  <div class="ui-block-b"> <a href="http://"                        id="button"                data-icon="info"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:purple; border-color:purple; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">INF0</a> </div>
+  <div class="ui-block-c"><a href="mailto:mike@have2need.com" id="button"                data-icon="mail"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:blue; border-color: blue; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button"  class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAIL</a> </div>
+  <div class="ui-block-d"><a href="google.navigation:q= Corner Keyes and thyrwitt avenue 2196 Johannesburg"                          id="button"                data-icon="location"  data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:red; border-color: red; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAP</a> </div>
+</div>
+</div> </p></a></li>
+  <div class="ui-body" style="background:white; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;   border-radius:0px; border-top:none !important;" >
+  <p style="opacity:0.7;"> <b>
+CAPITAL UNDERGROUND</b> <br>
+NIGHTCLUB AND EVENT SPACE 
+WE OFFER GREAT VALUE AND SERVICE AND BRING A SPACE TO MARKET FOR THOSE WANTING TO DO SOMETHING OUT OF THE MAINSTREAM 
+</div>
+<br>
+<div class="ui-body" style="background:white; font-weight:normal; box-shadow:1px 3px 5px 0px  rgba(100,100,100,0.49) ;   border-radius:0px;  " >
+  <p ><i style="color:purple">Venue:</i> Night Club</p>
+  <p ><i style="color:purple">Ambiance:</i> Hip-hop ,house and more</p>
+  <p ><i style="color:purple">Hours:</i> wednesday-sat  7:00pm-4:00am</p>
+  <p ><i style="color:purple">Age Resctriction :</i>21 and above<p>
+</div>     
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+
+
+
+<!--------------------------------------------------------------------------------DEJA VU------------------------------------------------------------------------------------------------>  
+<div data-role="page"    id="deja-vu"    data-dom-cache="true" >
+<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-fullscreen="false">
+<h1>Deja vu</h1>
+<a href="#"  data-rel="back" data-role="button" data-icon="carat-l"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+<a href="#" onclick="window.location.reload(true);" data-role="button" data-icon="refresh"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+</div>
+
+<!--MAIN-->  
+<ul data-role="listview"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input" class="ui-nodisc-icon ui-alt-icon"  >
+<li ><a href="#"        style="background-color:white;color:purple;border:none; box-shadow:0px 2px 3px rgba(100,100,100,0.49);margin-bottom:1px" >
+<img src="clubslogo-johannesburg\deja-vu.jpg" width="100%" height="80" style="background-color:white;box-shadow:0px 1px 3px rgba(100,100,100,0.49);border-radius:40px" >
+DEJA VU<p><font color="red">
+Club</font> 
+</ul>
+<div role="main" class="ui-content">
+<div class="ui-grid-c">
+  <div class="ui-block-a"> <a href="tel:0825629760"             id="button"                data-icon="phone"     data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:#3b7a57; border-color: #3b7a57; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">CALL US</a> </div>
+  <div class="ui-block-b"> <a href="http://www.clubdejavu.co.za/"                        id="button"                data-icon="info"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:purple; border-color:purple; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">INFO</a> </div>
+  <div class="ui-block-c"><a href="mailto:events@clubdejavu.co.za" id="button"                data-icon="mail"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:blue; border-color: blue; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button"  class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAIL</a> </div>
+  <div class="ui-block-d"><a href="google.navigation:q= 8 Goldman Street Florida 1709 Johannesburg"                          id="button"                data-icon="location"  data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:red; border-color: red; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAP</a> </div>
+</div>
+</div> </p></a></li>
+  <div class="ui-body" style="background:white; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;   border-radius:0px; border-top:none !important;" >
+  <p style="opacity:0.7;"> <b>
+  DEJA VU </b> <br> 
+  Sports Bar / Night Club/ Function Venue 
+   </p>
+</div>
+<br>
+<div class="ui-body" style="background:white; font-weight:normal; box-shadow:1px 3px 5px 0px  rgba(100,100,100,0.49) ;   border-radius:0px;  " >
+  <p ><i style="color:purple">Venue:</i> Night Club</p>
+  <p ><i style="color:purple">Ambiance:</i> n/a</p>
+  <p ><i style="color:purple">Hours:</i> thursday-Satday 8:00pm-2:00am</p>
+  <p ><i style="color:purple">Age Resctriction :</i>21 and above<p>
+</div>     
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+
+<!--------------------------------------------------------------------------------MEW YORK CLUB------------------------------------------------------------------------------------------------>  
+<div data-role="page"    id="nyc"    data-dom-cache="true" >
+<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-fullscreen="false">
+<h1>New York Club</h1>
+<a href="#"  data-rel="back" data-role="button" data-icon="carat-l"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+<a href="#" onclick="window.location.reload(true);" data-role="button" data-icon="refresh"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+</div>
+
+<!--MAIN-->  
+<ul data-role="listview"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input" class="ui-nodisc-icon ui-alt-icon"  >
+<li ><a href="#"        style="background-color:white;color:purple;border:none; box-shadow:0px 2px 3px rgba(100,100,100,0.49);margin-bottom:1px" >
+<img src="clubslogo-johannesburg\nyc.jpeg" width="100%" height="80" style="background-color:white;box-shadow:0px 1px 3px rgba(100,100,100,0.49);border-radius:40px" >
+NEW YORK CLUB<p><font color="red">
+Club</font> 
+</ul>
+<div role="main" class="ui-content">
+<div class="ui-grid-c">
+  <div class="ui-block-a"> <a href="tel:+27 795586346"             id="button"                data-icon="phone"     data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:#3b7a57; border-color: #3b7a57; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">CALL US</a> </div>
+  <div class="ui-block-b"> <a href="http://www.newyorkclub.co.za"                        id="button"                data-icon="info"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:purple; border-color:purple; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">INFO</a> </div>
+  <div class="ui-block-c"><a href="mailto: info@newyorkclub.co.za" id="button"                data-icon="mail"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:blue; border-color: blue; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button"  class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAIL</a> </div>
+  <div class="ui-block-d"><a href="google.navigation:q= Waterford Shopping Centre, Upper Level, Corner Witkoppen and Nerine Drive, Fourways, Sandton"                          id="button"                data-icon="location"  data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:red; border-color: red; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAP</a> </div>
+</div>
+</div> </p></a></li>
+  <div class="ui-body" style="background:white; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;   border-radius:0px; border-top:none !important;" >
+  <p style="opacity:0.7;"> <b>
+NEW YORK CLUB</b> <br> 
+one of the most incredible club in the city of johannesburg ,very classic and standard which suits your need of partying and having fun in your most favorable way 
+   </p>
+</div>
+<br>
+<div class="ui-body" style="background:white; font-weight:normal; box-shadow:1px 3px 5px 0px  rgba(100,100,100,0.49) ;   border-radius:0px;  " >
+  <p ><i style="color:purple">Venue:</i> Night Club</p>
+  <p ><i style="color:purple">Ambiance:</i> Hip-hop ,house</p>
+  <p ><i style="color:purple">Hours:</i> friday-Satday 8:00pm-3:00am</p>
+  <p ><i style="color:purple">Age Resctriction :</i>21 and above<p>
+</div>     
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+
+<!--------------------------------------------------------------------------------SANKAYI------------------------------------------------------------------------------------------------>  
+<div data-role="page"    id="sankayi"     data-dom-cache="true">
+<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-fullscreen="false">
+<h1>Sankayi</h1>
+<a href="#"  data-rel="back" data-role="button" data-icon="carat-l"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+<a href="#" onclick="window.location.reload(true);" data-role="button" data-icon="refresh"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+</div>
+
+<!--MAIN-->  
+<ul data-role="listview"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input" class="ui-nodisc-icon ui-alt-icon"  >
+<li ><a href="#"        style="background-color:white;color:purple;border:none; box-shadow:0px 2px 3px rgba(100,100,100,0.49);margin-bottom:1px" >
+<img src="clubslogo-johannesburg\sankayi.jpg" width="100%" height="80" style="background-color:white;box-shadow:0px 1px 3px rgba(100,100,100,0.49);border-radius:40px" >
+SANKAYI<p><font color="red">
+Club</font> 
+</ul>
+<div role="main" class="ui-content">
+<div class="ui-grid-c">
+  <div class="ui-block-a"> <a href="tel:083 859 5826"             id="button"                data-icon="phone"     data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:#3b7a57; border-color: #3b7a57; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">CALL US</a> </div>
+  <div class="ui-block-b"> <a href="http://"                        id="button"                data-icon="info"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:purple; border-color:purple; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">INFO</a> </div>
+  <div class="ui-block-c"><a href="mailto:" id="button"                data-icon="mail"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:blue; border-color: blue; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button"  class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAIL</a> </div>
+  <div class="ui-block-d"><a href="google.navigation:q= 90 Degrees Shopping Centre, Corner Of Rivonia Road & Kelvin Drive, Sandton, 2057"                          id="button"                data-icon="location"  data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:red; border-color: red; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAP</a> </div>
+</div>
+</div> </p></a></li>
+  <div class="ui-body" style="background:white; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;   border-radius:0px; border-top:none !important;" >
+  <p style="opacity:0.7;"> <b>
+SANKAYI</b> <br> 
+an upmarket venue in Morningside that specialises in local and internationals African and Latin musicians, who perform live regularly. The club is open from Wednesday to Sunday with karaoke on Wednesdays, Ladies Night on Thursdays, club nights on Fridays and Saturdays and an African buffet on Sundays for dinner.   </p>
+</div>
+<br>
+<div class="ui-body" style="background:white; font-weight:normal; box-shadow:1px 3px 5px 0px  rgba(100,100,100,0.49) ;   border-radius:0px;  " >
+  <p ><i style="color:purple">Venue:</i> Night Club</p>
+  <p ><i style="color:purple">Ambiance:</i> Hip-hop ,afro music and more</p>
+  <p ><i style="color:purple">Hours:</i> friday-Satday 8:45pm-4:00am</p>
+  <p ><i style="color:purple">Age Resctriction :</i>21 and above<p>
+</div>     
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+<!--------------------------------------------------------------------------------CHEZ NTEMBA------------------------------------------------------------------------------------------------>  
+<div data-role="page"    id="chez-ntemba"    data-dom-cache="true" >
+<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-fullscreen="false">
+<h1>Chez-ntemba</h1>
+<a href="#"  data-rel="back" data-role="button" data-icon="carat-l"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+<a href="#" onclick="window.location.reload(true);" data-role="button" data-icon="refresh"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+</div>
+
+<!--MAIN-->  
+<ul data-role="listview"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input" class="ui-nodisc-icon ui-alt-icon"  >
+<li ><a href="#"        style="background-color:white;color:purple;border:none; box-shadow:0px 2px 3px rgba(100,100,100,0.49);margin-bottom:1px" >
+<img src="clubslogo-johannesburg\chez-ntemba.jpg" width="100%" height="80" style="background-color:white;box-shadow:0px 1px 3px rgba(100,100,100,0.49);border-radius:40px" >
+CHEZ NTEMBA<p><font color="red">
+Club</font> 
+</ul>
+<div role="main" class="ui-content">
+<div class="ui-grid-c">
+  <div class="ui-block-a"> <a href="tel:+27012456277"             id="button"                data-icon="phone"     data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:#3b7a57; border-color: #3b7a57; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">CALL US</a> </div>
+  <div class="ui-block-b"> <a href="#info"                        id="button"                data-icon="info"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:purple; border-color:purple; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">INFO</a> </div>
+  <div class="ui-block-c"><a href="mailto:dannymwarabu@gmail.com" id="button"                data-icon="mail"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:blue; border-color: blue; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button"  class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAIL</a> </div>
+  <div class="ui-block-d"><a href="google.navigation:q= 525 duncan street,+pretoria+south+africa(MOLOKO)""                          id="button"                data-icon="location"  data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:red; border-color: red; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAP</a> </div>
+</div>
+</div> </p></a></li>
+  <div class="ui-body" style="background:white; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;   border-radius:0px; border-top:none !important;" >
+  <p style="opacity:0.7;"> <b>
+CHEZ NTEMBA</b> <br> 
+one of the most incredible club in the city of johannesburg ,very classic and standard which suits your need of partying and having fun in your most favorable way 
+   </p>
+</div>
+<br>
+<div class="ui-body" style="background:white; font-weight:normal; box-shadow:1px 3px 5px 0px  rgba(100,100,100,0.49) ;   border-radius:0px;  " >
+  <p ><i style="color:purple">Venue:</i> Night Club</p>
+  <p ><i style="color:purple">Ambiance:</i> Hip-hop ,house</p>
+  <p ><i style="color:purple">Hours:</i> Mday-Satday 8:00pm-2:00am</p>
+  <p ><i style="color:purple">Age Resctriction :</i>21 and above<p>
+</div>     
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+<!--------------------------------------------------------------------------------STONES FOURWAYS ------------------------------------------------------------------------------------------------>  
+<div data-role="page"    id="stones-fourways"    data-dom-cache="true" >
+<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-fullscreen="false">
+<h1>Stones Fourways</h1>
+<a href="#"  data-rel="back" data-role="button" data-icon="carat-l"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+<a href="#" onclick="window.location.reload(true);" data-role="button" data-icon="refresh"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+</div>
+
+<!--MAIN-->  
+<ul data-role="listview"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input" class="ui-nodisc-icon ui-alt-icon"  >
+<li ><a href="#"        style="background-color:white;color:purple;border:none; box-shadow:0px 2px 3px rgba(100,100,100,0.49);margin-bottom:1px" >
+<img src="clubslogo-johannesburg\stones-fourways.jpg" width="100%" height="80" style="background-color:white;box-shadow:0px 1px 3px rgba(100,100,100,0.49);border-radius:40px" >
+STONEZ FOURWAYS<p><font color="red">
+Club</font> 
+</ul>
+<div role="main" class="ui-content">
+<div class="ui-grid-c">
+  <div class="ui-block-a"> <a href="tel:+27012456277"             id="button"                data-icon="phone"     data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:#3b7a57; border-color: #3b7a57; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">CALL US</a> </div>
+  <div class="ui-block-b"> <a href="#info"                        id="button"                data-icon="info"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:purple; border-color:purple; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">INFO</a> </div>
+  <div class="ui-block-c"><a href="mailto:dannymwarabu@gmail.com" id="button"                data-icon="mail"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:blue; border-color: blue; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button"  class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAIL</a> </div>
+  <div class="ui-block-d"><a href="google.navigation:q= 525 duncan street,+pretoria+south+africa(MOLOKO)""                          id="button"                data-icon="location"  data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:red; border-color: red; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAP</a> </div>
+</div>
+</div> </p></a></li>
+  <div class="ui-body" style="background:white; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;   border-radius:0px; border-top:none !important;" >
+  <p style="opacity:0.7;"> <b>
+STONEZ FOURWAYS</b> <br> 
+one of the most incredible club in the city of johannesburg ,very classic and standard which suits your need of partying and having fun in your most favorable way 
+   </p>
+</div>
+<br>
+<div class="ui-body" style="background:white; font-weight:normal; box-shadow:1px 3px 5px 0px  rgba(100,100,100,0.49) ;   border-radius:0px;  " >
+  <p ><i style="color:purple">Venue:</i> Night Club</p>
+  <p ><i style="color:purple">Ambiance:</i> Hip-hop ,house</p>
+  <p ><i style="color:purple">Hours:</i> Mday-Satday 8:00pm-2:00am</p>
+  <p ><i style="color:purple">Age Resctriction :</i>21 and above<p>
+</div>     
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+<!--------------------------------------------------------------------------------STONES BEDFORDVIEW------------------------------------------------------------------------------------------------>  
+<div data-role="page"    id="stones-bedfordview"    data-dom-cache="true" >
+<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-fullscreen="false">
+<h1>Stones Bedfordview</h1>
+<a href="#"  data-rel="back" data-role="button" data-icon="carat-l"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+<a href="#" onclick="window.location.reload(true);" data-role="button" data-icon="refresh"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+</div>
+
+<!--MAIN-->  
+<ul data-role="listview"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input" class="ui-nodisc-icon ui-alt-icon"  >
+<li ><a href="#"        style="background-color:white;color:purple;border:none; box-shadow:0px 2px 3px rgba(100,100,100,0.49);margin-bottom:1px" >
+<img src="clubslogo-johannesburg\stones-bedfordview.jpg" width="100%" height="80" style="background-color:white;box-shadow:0px 1px 3px rgba(100,100,100,0.49);border-radius:40px" >
+STONES BEDFORDVIEW<p><font color="red">
+Club</font> 
+</ul>
+<div role="main" class="ui-content">
+<div class="ui-grid-c">
+  <div class="ui-block-a"> <a href="tel:+27012456277"             id="button"                data-icon="phone"     data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:#3b7a57; border-color: #3b7a57; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">CALL US</a> </div>
+  <div class="ui-block-b"> <a href="#info"                        id="button"                data-icon="info"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:purple; border-color:purple; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">INFO</a> </div>
+  <div class="ui-block-c"><a href="mailto:dannymwarabu@gmail.com" id="button"                data-icon="mail"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:blue; border-color: blue; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button"  class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAIL</a> </div>
+  <div class="ui-block-d"><a href="google.navigation:q= 525 duncan street,+pretoria+south+africa(MOLOKO)""                          id="button"                data-icon="location"  data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:red; border-color: red; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAP</a> </div>
+</div>
+</div> </p></a></li>
+  <div class="ui-body" style="background:white; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;   border-radius:0px; border-top:none !important;" >
+  <p style="opacity:0.7;"> <b>
+STONES BEDFORDVIEW</b> <br> 
+one of the most incredible club in the city of johannesburg ,very classic and standard which suits your need of partying and having fun in your most favorable way 
+   </p>
+</div>
+<br>
+<div class="ui-body" style="background:white; font-weight:normal; box-shadow:1px 3px 5px 0px  rgba(100,100,100,0.49) ;   border-radius:0px;  " >
+  <p ><i style="color:purple">Venue:</i> Night Club</p>
+  <p ><i style="color:purple">Ambiance:</i> Hip-hop ,house</p>
+  <p ><i style="color:purple">Hours:</i> Mday-Satday 8:00pm-2:00am</p>
+  <p ><i style="color:purple">Age Resctriction :</i>21 and above<p>
+</div>     
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+<!--------------------------------------------------------------------------------NEWS CAFE------------------------------------------------------------------------------------------------>  
+<div data-role="page"    id="news-cafe"  data-dom-cache="true"   >
+<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-fullscreen="false">
+<h1>News Cafe</h1>
+<a href="#"  data-rel="back" data-role="button" data-icon="carat-l"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+<a href="#" onclick="window.location.reload(true);" data-role="button" data-icon="refresh"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+</div>
+
+<!--MAIN-->  
+<ul data-role="listview"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input" class="ui-nodisc-icon ui-alt-icon"  >
+<li ><a href="#"        style="background-color:white;color:purple;border:none; box-shadow:0px 2px 3px rgba(100,100,100,0.49);margin-bottom:1px" >
+<img src="clubslogo-johannesburg\news-cafe.png" width="100%" height="80" style="background-color:white;box-shadow:0px 1px 3px rgba(100,100,100,0.49);border-radius:40px" >
+NEWS CAFE<p><font color="red">
+Lounge</font> 
+</ul>
+<div role="main" class="ui-content">
+<div class="ui-grid-c">
+  <div class="ui-block-a"> <a href="tel:+27012456277"             id="button"                data-icon="phone"     data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:#3b7a57; border-color: #3b7a57; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">CALL US</a> </div>
+  <div class="ui-block-b"> <a href="#info"                        id="button"                data-icon="info"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:purple; border-color:purple; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">INFO</a> </div>
+  <div class="ui-block-c"><a href="mailto:dannymwarabu@gmail.com" id="button"                data-icon="mail"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:blue; border-color: blue; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button"  class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAIL</a> </div>
+  <div class="ui-block-d"><a href="google.navigation:q= 525 duncan street,+pretoria+south+africa(MOLOKO)""                          id="button"                data-icon="location"  data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:red; border-color: red; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAP</a> </div>
+</div>
+</div> </p></a></li>
+  <div class="ui-body" style="background:white; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;   border-radius:0px; border-top:none !important;" >
+  <p style="opacity:0.7;"> <b>
+NEWS CAFE</b> <br> 
+one of the most incredible club in the city of johannesburg ,very classic and standard which suits your need of partying and having fun in your most favorable way 
+   </p>
+</div>
+<br>
+<div class="ui-body" style="background:white; font-weight:normal; box-shadow:1px 3px 5px 0px  rgba(100,100,100,0.49) ;   border-radius:0px;  " >
+  <p ><i style="color:purple">Venue:</i> Night Club</p>
+  <p ><i style="color:purple">Ambiance:</i> Hip-hop ,house</p>
+  <p ><i style="color:purple">Hours:</i> Mday-Satday 8:00pm-2:00am</p>
+  <p ><i style="color:purple">Age Resctriction :</i>21 and above<p>
+</div>     
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+<!--------------------------------------------------------------------------------KONG------------------------------------------------------------------------------------------------>  
+<div data-role="page"    id="kong"   data-dom-cache="true"  >
+<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-fullscreen="false">
+<h1>Kong</h1>
+<a href="#"  data-rel="back" data-role="button" data-icon="carat-l"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+<a href="#" onclick="window.location.reload(true);" data-role="button" data-icon="refresh"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+</div>
+
+<!--MAIN-->  
+<ul data-role="listview"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input" class="ui-nodisc-icon ui-alt-icon"  >
+<li ><a href="#"        style="background-color:white;color:purple;border:none; box-shadow:0px 2px 3px rgba(100,100,100,0.49);margin-bottom:1px" >
+<img src="clubslogo-johannesburg\kong.jpg" width="100%" height="80" style="background-color:white;box-shadow:0px 1px 3px rgba(100,100,100,0.49);border-radius:40px" >
+KONG<p><font color="red">
+Club</font> 
+</ul>
+<div role="main" class="ui-content">
+<div class="ui-grid-c">
+  <div class="ui-block-a"> <a href="tel:+27012456277"             id="button"                data-icon="phone"     data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:#3b7a57; border-color: #3b7a57; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">CALL US</a> </div>
+  <div class="ui-block-b"> <a href="#info"                        id="button"                data-icon="info"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:purple; border-color:purple; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">INFO</a> </div>
+  <div class="ui-block-c"><a href="mailto:dannymwarabu@gmail.com" id="button"                data-icon="mail"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:blue; border-color: blue; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button"  class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAIL</a> </div>
+  <div class="ui-block-d"><a href="google.navigation:q= 525 duncan street,+pretoria+south+africa(MOLOKO)""                          id="button"                data-icon="location"  data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:red; border-color: red; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAP</a> </div>
+</div>
+</div> </p></a></li>
+  <div class="ui-body" style="background:white; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;   border-radius:0px; border-top:none !important;" >
+  <p style="opacity:0.7;"> <b>
+KONG</b> <br> 
+one of the most incredible club in the city of johannesburg ,very classic and standard which suits your need of partying and having fun in your most favorable way 
+   </p>
+</div>
+<br>
+<div class="ui-body" style="background:white; font-weight:normal; box-shadow:1px 3px 5px 0px  rgba(100,100,100,0.49) ;   border-radius:0px;  " >
+  <p ><i style="color:purple">Venue:</i> Night Club</p>
+  <p ><i style="color:purple">Ambiance:</i> Hip-hop ,house</p>
+  <p ><i style="color:purple">Hours:</i> Mday-Satday 8:00pm-2:00am</p>
+  <p ><i style="color:purple">Age Resctriction :</i>21 and above<p>
+</div>     
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+<!--------------------------------------------------------------------------------MADISON AVENUE------------------------------------------------------------------------------------------------>  
+<div data-role="page"    id="madison-avenue"   data-dom-cache="true"  >
+<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-fullscreen="false">
+<h1>Madison Avenue</h1>
+<a href="#"  data-rel="back" data-role="button" data-icon="carat-l"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+<a href="#" onclick="window.location.reload(true);" data-role="button" data-icon="refresh"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+</div>
+
+<!--MAIN-->  
+<ul data-role="listview"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input" class="ui-nodisc-icon ui-alt-icon"  >
+<li ><a href="#"        style="background-color:white;color:purple;border:none; box-shadow:0px 2px 3px rgba(100,100,100,0.49);margin-bottom:1px" >
+<img src="clubslogo-johannesburg\madison-avenue.jpg" width="100%" height="80" style="background-color:white;box-shadow:0px 1px 3px rgba(100,100,100,0.49);border-radius:40px" >
+MADISON AVENUE<p><font color="red">
+Club</font> 
+</ul>
+<div role="main" class="ui-content">
+<div class="ui-grid-c">
+  <div class="ui-block-a"> <a href="tel:+27012456277"             id="button"                data-icon="phone"     data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:#3b7a57; border-color: #3b7a57; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">CALL US</a> </div>
+  <div class="ui-block-b"> <a href="#info"                        id="button"                data-icon="info"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:purple; border-color:purple; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">INFO</a> </div>
+  <div class="ui-block-c"><a href="mailto:dannymwarabu@gmail.com" id="button"                data-icon="mail"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:blue; border-color: blue; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button"  class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAIL</a> </div>
+  <div class="ui-block-d"><a href="google.navigation:q= 525 duncan street,+pretoria+south+africa(MOLOKO)""                          id="button"                data-icon="location"  data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:red; border-color: red; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAP</a> </div>
+</div>
+</div> </p></a></li>
+  <div class="ui-body" style="background:white; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;   border-radius:0px; border-top:none !important;" >
+  <p style="opacity:0.7;"> <b>
+MADISON AVENUE</b> <br> 
+one of the most incredible club in the city of johannesburg ,very classic and standard which suits your need of partying and having fun in your most favorable way 
+   </p>
+</div>
+<br>
+<div class="ui-body" style="background:white; font-weight:normal; box-shadow:1px 3px 5px 0px  rgba(100,100,100,0.49) ;   border-radius:0px;  " >
+  <p ><i style="color:purple">Venue:</i> Night Club</p>
+  <p ><i style="color:purple">Ambiance:</i> Hip-hop ,house</p>
+  <p ><i style="color:purple">Hours:</i> Mday-Satday 8:00pm-2:00am</p>
+  <p ><i style="color:purple">Age Resctriction :</i>21 and above<p>
+</div>     
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+<!--------------------------------------------------------------------------------VIP ROOM------------------------------------------------------------------------------------------------>  
+<div data-role="page"    id="vip-room"    data-dom-cache="true" >
+<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-fullscreen="false">
+<h1>Vip Room</h1>
+<a href="#"  data-rel="back" data-role="button" data-icon="carat-l"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+<a href="#" onclick="window.location.reload(true);" data-role="button" data-icon="refresh"  class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"  data-iconshadow="false"  style="background-color:transparent !important;border:none; border-style:hidden;-webkit-box-shadow:none;box-shadow:none;">back </a>
+</div>
+
+<!--MAIN-->  
+<ul data-role="listview"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input" class="ui-nodisc-icon ui-alt-icon"  >
+<li ><a href="#"        style="background-color:white;color:purple;border:none; box-shadow:0px 2px 3px rgba(100,100,100,0.49);margin-bottom:1px" >
+<img src="clubslogo-johannesburg\vip-room.jpg" width="100%" height="80" style="background-color:white;box-shadow:0px 1px 3px rgba(100,100,100,0.49);border-radius:40px" >
+VIP ROOM<p><font color="red">
+Club</font> 
+</ul>
+<div role="main" class="ui-content">
+<div class="ui-grid-c">
+  <div class="ui-block-a"> <a href="tel:+27012456277"             id="button"                data-icon="phone"     data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:#3b7a57; border-color: #3b7a57; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">CALL US</a> </div>
+  <div class="ui-block-b"> <a href="#info"                        id="button"                data-icon="info"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:purple; border-color:purple; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-btn-inline" data-iconshadow="false" data-iconpos="notext">INFO</a> </div>
+  <div class="ui-block-c"><a href="mailto:dannymwarabu@gmail.com" id="button"                data-icon="mail"      data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:blue; border-color: blue; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button"  class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAIL</a> </div>
+  <div class="ui-block-d"><a href="google.navigation:q= 525 duncan street,+pretoria+south+africa(MOLOKO)""                          id="button"                data-icon="location"  data-prefetch  style="float:left; height:50px !important;width:50px !important; border-radius:30px; background:red; border-color: red; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.90) ;  text-shadow:0 0 0; color:white; border-top:none !important;display:inline-block;width:50%" data-role="button" class="ui-nodisc-icon" data-iconshadow="false" data-iconpos="notext">MAP</a> </div>
+</div>
+</div> </p></a></li>
+  <div class="ui-body" style="background:white; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;   border-radius:0px; border-top:none !important;" >
+  <p style="opacity:0.7;"> <b>
+VIP ROOM</b> <br> 
+one of the most incredible club in the city of johannesburg ,very classic and standard which suits your need of partying and having fun in your most favorable way 
+   </p>
+</div>
+<br>
+<div class="ui-body" style="background:white; font-weight:normal; box-shadow:1px 3px 5px 0px  rgba(100,100,100,0.49) ;   border-radius:0px;  " >
+  <p ><i style="color:purple">Venue:</i> Night Club</p>
+  <p ><i style="color:purple">Ambiance:</i> Hip-hop ,house</p>
+  <p ><i style="color:purple">Hours:</i> Mday-Satday 8:00pm-2:00am</p>
+  <p ><i style="color:purple">Age Resctriction :</i>21 and above<p>
+</div>     
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+
+</body>
+</html>
