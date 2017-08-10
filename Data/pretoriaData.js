@@ -361,7 +361,7 @@ $(document).on("pagebeforeshow", "#details-page", function () {
                        +'</div>'
                        //Map
                        +'<div class="ui-block-d">'
-                       +'<a href="google.navigation:q='+ data.address +" class="ui-btn ui-icon-location ui-btn-icon-left" style="width:10px;height:25px;border-radius:30px; background:red">'+  '</a>'+'<br>'
+                       + '<a href="geo:' + data.address + '" class="ui-btn ui-icon-location ui-btn-icon-left" style="width:10px;height:25px;border-radius:30px; background:red">'+  '</a>'+'<br>'
                        +'</div><br>'
                       // DETAILS and DESCRIPTION
                        +'<div class="ui-body" style="background:white;margin:0px 10px ; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;   border-radius:0px; border-top:none !important;" >'
