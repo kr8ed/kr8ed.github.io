@@ -340,7 +340,7 @@ $(document).on("pagebeforeshow", "#details-page", function () {
                     
                        +'<div  style="background:white;margin-top:-16px; font-weight:normal;box-shadow:1px 3px 5px 0px rgba(100,100,100,0.49) ;   border-radius:0px; border-top:none !important;" >'
                        +' <ul data-role="listview"  data-filter="true" data-icon="false" data-mini="true" data-input="#filterBasic-input" class="ui-nodisc-icon ui-alt-icon"  >'
-                       + '<img src="'+data.img+'" align="middle" atl="" width="80" height="80" style="background-color:white;box-shadow:0px 1px 7px rgba(100,100,100,0.49);border-radius:40px"/>'
+                       + '<img src="'+data.img+'" align="middle" onerror=this.src="https://ritzbethesda.pointofrentalcloud.com/img/no_image.gif"  width="80" height="80" style="background-color:white;box-shadow:0px 1px 7px rgba(100,100,100,0.49);border-radius:40px"/>'
                        +" "+data.type+" "+ data.area+'<br>'
                        +'</div>'+'<br>'
                      
