@@ -193,7 +193,7 @@ var data = [
         "type":"Bar",
         "area":"sandton",
         "details":" Cabaret shows and themed club nights in an glamorous party venue with 3 bars and VIP lounge areas.",
-        "img": "http://www.movida.co.za/graphics/logo.jpg",
+        "img": "https://www.movida.co.za/graphics/logo.jpg",
         "url":"http://www.movida.co.za/",
         "tel":"(011) 234-8000",
         "age":null,
