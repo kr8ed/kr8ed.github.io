@@ -72,5 +72,97 @@
 
     </div><!-- /content -->
 	</div><!-- /main -->
+
+	
+    <!------------------------------------------------------BROWSE ---------------------------------------------------------------------------->
+
+    <div data-role="page" id="browse" data-dom-cache="true">
+				
+				
+				
+								<div role="main" data-direction="reverse" class="ui-content" id="ptr">
+				
+										<form class="ui filterable" data-role="header" data-position="fixed" data-tap-toggle="true" id="form">
+												<input id="searchForCollapsibleSetChildren" Style="color:black;opacity:0.7;background-color:transparent;border-bottom:1px solid;border-color:purple" data-wrapper-class="ui-custom" data-type="search" data-mini="true" autocomplete="off" placeholder="Search  ">
+										</form>
+				
+										<a href="specials.html" id="specials" class=" ui-nodisc-icon" data-prefetch data-ajax="false" data-transition="slide" data-role="button"> SPECIALS !!! </a>
+				
+										<div id="collapsiblesetForFilterChildren" data-role="collapsible-set" data-input="#searchForCollapsibleSetChildren" data-filter="true" data-inset="true" data-children="> div, > div div ul li">
+				
+												<!--<div data-role="collapsible" id="custom-collapsible" data-filtertext="Easten Cape East London Port Elizabeth" data-collapsed-icon="carat-r" data-expanded-icon="carat-d" class="ui-nodisc-icon ui-alt-icon">
+														<h3>Eastern Cape</h3>
+														<ul data-role="listview" data-inset="false">
+																<li data-filtertext="easten Cape East London"> <a href="provinces/eastern-cape/east-london.html" data-ajax="false" id="city">East London</a></li>
+																<li data-filtertext="easten Cape Port Elizabeth"><a href="#" data-prefetch id="city">Port Elizabeth</a></li>
+														</ul>
+												</div>
+												<div data-role="collapsible" id="custom-collapsible" data-filtertext="Free State Bloemfontien" data-collapsed-icon="carat-r" data-expanded-icon="carat-d" class="ui-nodisc-icon ui-alt-icon">
+														<h3>Free State</h3>
+														<ul data-role="listview" data-inset="false">
+																<li data-filtertext="Free State Bloemfontien"> <a href="provinces/free-state/bloemfontien.html" id="city" data-ajax="false">Bloemfontien</a></li>
+														</ul>
+												</div>-->
+				
+												<div data-role="collapsible" id="custom-collapsible" data-filtertext="Gauteng johannesburg jozi pretoria pta East Rand West Rand" data-collapsed-icon="carat-r" data-expanded-icon="carat-d" class="ui-nodisc-icon ui-alt-icon">
+														<h3>Gauteng</h3>
+														<ul data-role="listview" data-inset="false" class="ui-icon-alt">
+																<li data-filtertext="Gauteng johannesburg jozi"><a href="provinces/gauteng/johannesburg.html" id="city" data-ajax="false" data-transition="slide">Johannesburg</a></li>
+																<li data-filtertext="Gauteng Pretoria pta "> <a href="provinces/gauteng/pretoria.html" id="city" data-ajax="false" data-transition="slide">Pretoria</a></li>
+														</ul>
+												</div>
+												<div data-role="collapsible" id="custom-collapsible" data-filtertext="Kwazulu-Natal Durban" data-collapsed-icon="carat-r" data-expanded-icon="carat-d" class="ui-nodisc-icon ui-alt-icon">
+														<h3>Kwazulu-Natal</h3>
+														<ul data-role="listview" data-inset="false">
+																<li data-filtertext="Kwazulu-Natal Durban"> <a href="provinces/kwazulu-natal/durban.html" data-prefetch data-ajax="false" id="city">Durban</a></li>
+														</ul>
+												</div><!--
+												<div data-role="collapsible" id="custom-collapsible" data-filtertext="Limpopo Polokwane/Pietersburg" data-collapsed-icon="carat-r" data-expanded-icon="carat-d" class="ui-nodisc-icon ui-alt-icon">
+														<h3>Limpopo</h3>
+														<ul data-role="listview" data-inset="false" class="ui-icon-alt">
+																<li data-filtertext="Limpopo Polokwane/Pietersburg"><a href="#cape-town" id="city" data-transition="slide" data-prefetch>Polokwane/Pietersburg</a></li>
+														</ul>
+												</div>
+												<div data-role="collapsible" id="custom-collapsible" data-filtertext="Mpumalanga Nelspruit Witbank" data-collapsed-icon="carat-r" data-expanded-icon="carat-d" class="ui-nodisc-icon ui-alt-icon">
+														<h3>Mpumalanga</h3>
+														<ul data-role="listview" data-inset="false" class="ui-icon-alt">
+																<li data-filtertext="Mpumalanga Nelspruit"><a href="#cape-town" id="city" data-transition="slide" data-prefetch> Nelspruit</a></li>
+																<li data-filtertext="Mpumalanga Witbank"><a href="#cape-town" id="city" data-transition="slide" data-prefetch>Witbank</a></li>
+														</ul>
+												</div>
+												<div data-role="collapsible" id="custom-collapsible" data-filtertext="Northen Cape Kimberley" data-collapsed-icon="carat-r" data-expanded-icon="carat-d" class="ui-nodisc-icon ui-alt-icon">
+														<h3>Northen Cape</h3>
+														<ul data-role="listview" data-inset="false" class="ui-icon-alt">
+																<li data-filtertext="Northen Cape Kimberley"><a href="#cape-town" id="city" data-transition="slide" data-prefetch>Kimberley</a></li>
+														</ul>
+												</div>
+												<div data-role="collapsible" id="custom-collapsible" data-filtertext="North West brits Mabopane Mmbatho Mafikeng potchefstroom" data-collapsed-icon="carat-r" data-expanded-icon="carat-d" class="ui-nodisc-icon ui-alt-icon">
+														<h3>North West</h3>
+														<ul data-role="listview" data-inset="false" class="ui-icon-alt">
+																<li data-filtertext="North West brits"><a href="#cape-town" id="city" data-transition="slide" data-prefetch>Brits</a></li>
+																<li data-filtertext="North West Mabopane"><a href="#" id="city" data-transition="slide" data-prefetch>Mabopane</a></li>
+																<li data-filtertext="North West Mafikeng"><a href="#" id="city" data-transition="slide" data-prefetch>Mafikeng</a></li>
+																<li data-filtertext="North West Mmbatho"><a href="#" id="city" data-transition="slide" data-prefetch>Mmbatho</a></li>
+																<li data-filtertext="North West  potchefstroom"><a href="#" id="city" data-transition="slide" data-prefetch> potchefstroom</a></li>
+														</ul>
+												</div>-->
+												<div data-role="collapsible" id="custom-collapsible" data-filtertext="western cape cape town " data-collapsed-icon="carat-r" data-expanded-icon="carat-d" class="ui-nodisc-icon ui-alt-icon">
+														<h3>Western Cape</h3>
+														<ul data-role="listview" data-inset="false" class="ui-icon-alt">
+																<li data-filtertext="western cape cape town"><a href="provinces/western-cape/cape-town.html"  data-ajax="false" id="city" data-transition="slide" data-prefetch>Cape town</a></li>
+				
+														</ul>
+												</div>
+												<div data-role="collapsible" id="no-resulta">
+				
+												</div>
+				
+				
+				
+										</div>
+								</div>
+				
+						</div>
+						<!-- /page -->
 </body>
 </html>
