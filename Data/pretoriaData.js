@@ -24,7 +24,8 @@ var data = [
         "ambiance":"night life",
         "hours":"10PM to late",
         "email": "info@vanitypta.co.za", 
-        "address": "22 Groenkloof plaza, 53 george storrar dr & Bronkhorst St, Groenkloof, Pretoria, 0027"} , {
+        "address": "22 Groenkloof plaza, 53 george storrar dr & Bronkhorst St, Groenkloof, Pretoria, 0027"} , 
+        {
         
         "name":"Presley's",
         "type":"club",
