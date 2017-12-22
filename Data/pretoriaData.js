@@ -13,7 +13,7 @@ var data = [
         "email": "", 
         "address": ""} , */ {
         
-        "name":"Vanity",
+        "name":"Vanity.",
         "type":"Night Club",
         "area":"Groenkloof",
         "details":"Sophisticated, unique, and effortlessly stylish, Vanity is the exceptional destination for glittering celebrations ",
