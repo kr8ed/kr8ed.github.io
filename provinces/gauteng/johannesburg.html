@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="../../scripts/includes/pull2refresh.css" type="text/css" />
     <script src="../../scripts/jsmobile/pull2refresh.js"></script>
     <link rel="stylesheet" href="../../scripts/includes/custom.css">
+
+	<link rel="stylesheet" href="../../scripts/jsmobile/ptr.css" />
+    <script type="text/javascript" src="../../scripts/jsmobile/ptr.js"></script>
     <link rel="stylesheet" href="../../scripts/jsmobile/jquery.mobile-1.4.5.min.css">
     <!-- DATA -->
     <script src="../../Data/johannesburgData.js"></script>
@@ -21,9 +24,22 @@
         });
     </script>
     <script src="../../scripts/jsmobile/jquery.mobile-1.4.5.min.js"></script>
+    
+	<!--refresh script-->
+    <script type="text/javascript">
+  	function start() {
+			jqPTR('ptr',function (){ 
+				console.log('Done!'); 
+				location.reload();
+				// usually you call just jqPTR_refresh(); 
+				// I've added setTimeout because I do not have to wait for an ajax call response
+				setTimeout(jqPTR_refresh, 1000); 
+			});
+		}
+  </script>
 </head>
 
-<body oncontextmenu="return false;">
+<body onload="start();">
     <div data-role="page" id="info-page" data-dom-cache="true">
 
         <div data-role="header" data-position="fixed" data-tap-toggle="true" data-fullscreen="false" class="shadow">
@@ -44,8 +60,10 @@
 
 
        
-        <div id="content">
-            <div role="main">
+            <div role="main" class="ui-content" id="ptr">
+                    <div class="loading">
+                            Release to refresh !
+                      </div>
                 <div>
                     <form class="ui filterable" data-position="fixed" data-tap-toggle="false" id="form">
                         <input id="filterBasic-input" Style="color:black;opacity:0.7;background-color:transparent;border-bottom:1px solid;border-color:grey" data-wrapper-class="ui-custom" data-type="search" data-mini="true" autocomplete="off" placeholder="Search by Name ,Type or Area">
@@ -62,30 +80,30 @@
                 </ul>
 
             </div>
-        </div>
+        </div></div>
     </div>
 
-
-    <!--second page -->
-    <div data-role="page" id="details-page" data-dom-cache="true">
-
-        <div data-role="header" data-position="fixed" data-tap-toggle="true"  id="simpleEdit">
-
-            <h1>Details</h1>
-            <a href="#" data-rel="back" class="ui-btn-icon ui-nodisc-icon ui-alt-icon" data-role="button" data-icon="carat-l" class="ui-nodisc-icon " data-iconpos="notext" data-iconshadow="false" style="background-color:transparent !important;
-               border:none;
-               border-style:hidden;
-               -webkit-box-shadow:none;
-               box-shadow:none;">home
-        </a>
-
-        </div>
-
-        <div data-role="content" style="padding:0px;margin:0px">
-
-        </div>
-
-    </div>
+   <!--second page -->
+   <div data-role="page" id="details-page" data-dom-cache="true">
+        
+                <div data-role="header" data-position="fixed" data-tap-toggle="true"  id="simpleEdit">
+        
+                    <h1>Details</h1>
+                    <a href="#" data-rel="back" class="ui-btn-icon ui-nodisc-icon ui-alt-icon" data-role="button" data-icon="carat-l" class="ui-nodisc-icon " data-iconpos="notext" data-iconshadow="false" style="background-color:transparent !important;
+                       border:none;
+                       border-style:hidden;
+                       -webkit-box-shadow:none;
+                       box-shadow:none;">home
+                </a>
+        
+                </div>
+        
+                <div data-role="content" style="padding:0px;margin:0px">
+        
+                </div>
+        
+            </div>
+ 
 </body>
 
 </html>
